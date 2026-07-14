@@ -274,28 +274,41 @@
             
         </section>
 
-        <section>
+        <section id="testimonails">
             <h2>Community Love</h2>
 
-            <div>
-                <div>
-                    <i></i>
-                    <p>"The Creamy Garlic Pasta is now a weekly staple in our house. The step-by-step videos make it so easy even for a beginner like me!"</p>
+            <div class="tests-com">
+                <div class="tests-com-sub">
+                    <SPAn>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </SPAn>
+                    <p class="tests-ita">"The Creamy Garlic Pasta is now a weekly staple in our house. The step-by-step videos make it so easy even for a beginner like me!"</p>
 
-                    <div>
+                    <div class="tests-img">
                         <img src="img/savory_co_homepage_desktop_image_7.png" alt="">
 
                         <div>
-                            <h4>SarahMitchell</h4>
+                            <h4>Sarah Mitchell</h4>
                             <p>Home Cook</p>
                         </div>    
                     </div>
+                </div>  
 
-                    <div>
-                    <i></i>
-                    <p>"Finally a recipe site that focus on techniques and quality ingredients. The artisanal pizza crust intructions are a game changer."</p>
+                <div class="tests-com-sub">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </span>
+                    <p class="tests-ita">"Finally a recipe site that focus on techniques and quality ingredients. The artisanal pizza crust intructions are a game changer."</p>
 
-                    <div>
+                    <div class="tests-img">
                         <img src="img/savory_co_homepage_desktop_image_8.png" alt="">
 
                         <div>
@@ -303,12 +316,19 @@
                             <p>Food Enthusiast</p>
                         </div>    
                     </div>
+                 </div>   
 
-                    <div>
-                    <i></i>
-                    <p>"The meal palns have saved me so much time. I love that the ingredients are accessible yet the results are high-end."</p>
+                <div class="tests-com-sub">
+                    <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </SPAn>
+                    <p class="tests-ita">"The meal palns have saved me so much time. I love that the ingredients are accessible yet the results are high-end."</p>
 
-                    <div>
+                    <div class="tests-img">
                         <img src="img/savory_co_homepage_desktop_image_9.png" alt="">
 
                         <div>
@@ -322,33 +342,42 @@
             
         </section>
 
-        <section>
-            <div>
-                <i></i>
+        <section id="contact">
+            <div class="contact-main">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 <h3>Join the Savoury Table</h3>
-                <p>Get a weekly dosr o culinary inspiration, new recipes, and exclusive kitchen tips delivered to your inbox.</p>
+                <p class="contact-first-p">Get a weekly dosr o culinary inspiration, new recipes, and exclusive kitchen tips delivered to your inbox.</p>
 
-                <input type="email" name="your email address" id="">
-                <button>Sign Up</button>
+                <input type="email" name="your email address" id="" placeholder="Your email address">
+                <button id="sub-first-btn">Sign Up</button>
 
-                <p>We respect your privacy. Unsubscribe anytime.</p>
+                <p class="contact-second-p">We respect your privacy. Unsubscribe anytime.</p>
             </div>
 
-            <div>
+            <div class="contact-sub">
                 <h2>Get in Touch</h2>
                 <p>Have a question about a recipe? Or want to collaborate? Drop us a mesage.</p>
 
                 <form action="">
-                    <label for="naem" id="name">Name</label>
-                    <input type="text" name="John Doe" id="name" required>
+                    <div class="form-nam">
+                        <div>
+                            <label for="naem" id="name">Name</label>
+                            <input type="text" name="John Doe" id="name" placeholder="John Doe" required>
+                        </div>
+                    
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="john@example.com" id="email" placeholder="john@example.com" required>
+                         </div>
+                    </div>
+                    
+                    <div class="form-second">
+                        <label for="message">Message</label>
+                        <textarea name="user_message" id="message" placeholder="How can we help you?"></textarea>
+                        <button type="submit">Send message</button>
+                    </div>
 
-                    <label for="email">Email</label>
-                    <input type="email" name="john@example.com" id="email" required>
-
-                    <label for="message">Message</label>
-                    <textarea name="user_message" id="message">How can we help you?</textarea>
-
-                    <button type="submit">Send message</button>
+                    
                 </form>
             </div>
         </section>
