@@ -764,14 +764,19 @@ header button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    padding: 3rem 1rem 2rem 1rem;
+    padding: 3rem 1rem 6rem 1rem;
 }
 
 .contact-main {
     background: #8B4513;
     border-radius: 12px;
-    padding: 5rem;
+    
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  0 2rem;
 }
 
 .contact-main .fa {
@@ -937,12 +942,109 @@ form .form-nam input::placeholder {
     background: #00714d;
     border-radius: 10px;
     height: 4rem;
-    margin-top: 0.9rem;
+    margin-top: 1rem;
     border: none;
 }
 
 .form-second button:hover {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: #fff1e9;
+    
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+footer h3 {
+    color: #8d4b00;
+    font-size: 1.5rem;
+}
+
+.footer-title br {
+    display: n;
+}
+
+.footer-title p {
+    font-size: 14px;
+    opacity: 0.7;
+    letter-spacing: 1.2px;
+}
+
+footer .footer-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer .footer-li h4 {
+    color: #b15f00;
+    margin-bottom: 0.5rem;
+    font-size: 17px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ footer .footer-li li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    opacity: 0.7;
+    /* width: fit-content; */
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+} 
+
+footer .footer-li ul li::after {
+    content: '';
+    width: fit-content;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: #392e26;
+    transition: opacity 0.2s ease;
+
+}
+footer .footer-li li:hover {
+    border-bottom: 1px solid #392e26;
+}
+
+
+footer .footer-co {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 0.5rem;
+    font-size: 17px;
+    color: #392e26;
+    opacity: 0.8;
+}
+
+footer .footer-co svg {
+    width: 20px;
+    cursor: pointer;
 }
 
 
@@ -1010,10 +1112,37 @@ form .form-nam input::placeholder {
 
 #contact {
     grid-template-columns: 1fr;
-    gap: 3rem;
-    padding: 3rem 1rem 2rem 1rem;
+    gap: 0;
+    /* padding: 3rem 1rem 2rem 1rem; */
+    padding: 0 1rem;
 }
 
+.contact-main {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.contact-sub h2 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.form-second button {
+    margin-bottom: 2rem;
+}
+
+/* footer */
+footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer .footer-co {
+    align-items: center;
+}
 
 
 }
@@ -1087,13 +1216,7 @@ form .form-nam input::placeholder {
         margin-left: 3rem;
     }
 
-
-    .feature-text-sec {
-        /* border: 2px solid; */
-        /* margin-bottom: 1rem; */
-    }
     .recipe-subset-sub {
-        /* border: 2px solid; */
         padding-bottom: 2rem;
     }
 
@@ -1107,7 +1230,6 @@ form .form-nam input::placeholder {
         padding: 2rem 1rem;
     
 }
-
 
     .meal-sub p {
         font-size: 12px;
@@ -1164,11 +1286,38 @@ form .form-nam input::placeholder {
         font-size: 14px;
         margin-top: 2rem;
         padding: 0.8rem 1.5rem;
+
     }
 
 
     /* cantact */
-    #first-btn{
-        border: 3px solid red;
+
+    .contact-sub h2 {
+    margin-top: 2rem;
+    
+}
+
+    /* footer */
+    footer br {
+        display: none;
+    }
+
+    .footer-title p {
+        font-size: 12px;
+    }
+
+    footer .footer-li h4 {
+        font-size: 14px;
+    }
+
+    footer .footer-li li {
+        font-size: 13px;
+    }
+
+    footer .footer-co p {
+        font-size: 14px;
+    }
+    footer .footer-co svg {
+        width: 14px;
     }
 }
